@@ -7,7 +7,7 @@ import os
 def download_model():
     # do a dry run of loading the huggingface model, which will download weights at build time
     #Set auth token which is required to download stable diffusion model weights
-    HF_AUTH_TOKEN = "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"
+    HF_AUTH_TOKEN = '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'
     
     model = StableDiffusionPipeline.from_pretrained(
         "CompVis/stable-diffusion-v1-4",

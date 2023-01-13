@@ -11,7 +11,7 @@ import PIL
 # Load your model to GPU as a global variable here using the variable name "model"
 def init():
     global model
-    HF_AUTH_TOKEN = "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"
+    HF_AUTH_TOKEN = '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'
     
     model = StableDiffusionInpaintPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", revision="fp16", torch_dtype=torch.float16,use_auth_token=HF_AUTH_TOKEN).to("cuda")
 
